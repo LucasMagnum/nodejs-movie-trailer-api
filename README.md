@@ -13,7 +13,7 @@ The documentation is available [here](./docs/api.md).
 ## Quick Start
     * Clone this project
     * Run `npm install`
-    * Run `TMDB_API_KEY=<key here> npm start`
+    * Run `TMDB_API_KEY=<key here> TMDB_API_URL=https://api.themoviedb.org/3 npm start`
     * Access `http://localhost:3000/`
 
 ## Testing
