@@ -4,10 +4,10 @@ FORMAT: 1A
 
 # Viaplay [/viaplay]
 
-## POST
-Return list of trailers for given list of movies.
+## List of trailers [POST]
+Return list of trailers for a given list of movies.
 
-    + Request (application/json; charset=utf-8)
++ Request (application/json; charset=utf-8)
 
             {
                 "movies": [
@@ -46,4 +46,23 @@ Return list of trailers for given list of movies.
                 }
             }
 
+## Invalid Payload [POST]
+Return an error when a movies list is not given
 
++ Response 400 (application/json; charset=utf-8)
+
+    + Body
+
+            {
+                "error_message": "Payload must contain `movies` attribute.",
+            }
+
+    + Schema
+
+            {
+                "type": "object",
+                "properties": {
+                    "error_message": { "type": "string" }
+                },
+                "additionalProperties": false
+            }

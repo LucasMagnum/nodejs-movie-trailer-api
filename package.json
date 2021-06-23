@@ -2,8 +2,9 @@
   "name": "nodejs-movie-trailer-api",
   "version": "1.0.0",
   "description": "Movie Trailer API",
-  "main": "main.js",
+  "main": "src/main.js",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1"
   },
   "devDependencies": {
@@ -11,8 +12,8 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "node main.js",
-    "watch": "nodemon main.js",
+    "start": "node src/main.js",
+    "watch": "nodemon src/main.js",
     "test": "dredd"
   },
   "repository": {
